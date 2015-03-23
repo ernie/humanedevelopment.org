@@ -32,7 +32,7 @@ p, ul {
 #container {
   width: 80%;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 10px 20px;
   background: #fff;
   min-height: 100%;
 }
@@ -70,4 +70,16 @@ p, ul {
 .virtue {
   text-align: center;
   font-size: 30pt;
+}
+
+#copyright {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 10pt;
+  color: #888;
+
+  a {
+    color: #888;
+  }
 }
