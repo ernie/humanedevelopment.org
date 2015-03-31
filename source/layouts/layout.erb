@@ -5,7 +5,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="author" content="Ernie Miller">
     <meta name="description" content="Sustainability over speed. Empathy, Honesty, Trust, and Autonomy. Create software with a minimum of pain.">
-    <title><%= current_page.data.title || 'Humane Development' %></title>
+    <title><%= [current_page.data.title, 'Humane Development'].compact.join(' - ') %></title>
 
     <%= stylesheet_link_tag 'all' %>
     <%= javascript_include_tag  'all' %>
@@ -23,8 +23,13 @@
 
   <body class="<%= page_classes %>">
     <div id="container">
+      <nav>
+        <a href="/support/">Support</a>
+      </nav>
       <header>
-        <h1 id="header"><span class="red">Humane</span> Development</h1>
+        <h1 id="header">
+          <a href="/"><span class="red">Humane</span> Development</a>
+        </h1>
         <h2 id="subheader">
           Empathy
           <span class="heart"></span>
